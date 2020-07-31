@@ -2,6 +2,7 @@
 This is a To do list using Node.js and Mongodb as Database.
 
 #How to use
+#Step1
 #Step 1
 open command prompt and run npm install
 #step 2
