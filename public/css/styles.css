@@ -1,0 +1,142 @@
+
+body{
+  background-color: #f0ece3;
+  background-image: -webkit-linear-gradient(65deg, #c7b198 50%, #E4E9FD 50%);
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+h1, h2 {
+  color: #fff;
+  padding: 10px;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.box-goBack{
+  max-width: 400px;
+  margin: 50px auto;
+  border-radius: 5px;
+  text-align: center;
+  background: transparent;
+}
+
+#heading {
+  background-color: #596e79;
+  text-align: center;
+  min-height: 4rem;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #A683E3;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+  max-width: 300px;
+  display: inline-block;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+form.titleCheckBox{
+margin-right:10px;
+width: 20px;
+display: inline-block;
+}
+
+form.title{
+  width: 350px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+button {
+  min-height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #596e79;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+button.titlenav{
+  min-height: 50px;
+  width: 350px;
+  border-color: transparent;
+  background-color: #fff;
+  color: #596e79;
+  font-size:2rem;
+  text-align: left;
+}
+
+a{
+  display: inline-block;
+  position: relative;
+}
+button.item {
+  text-align: center;
+  min-height: 70px;
+  min-width: 345px;
+  background-color: #fff;
+  align-items: center;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}

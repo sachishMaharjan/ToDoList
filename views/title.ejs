@@ -1,0 +1,38 @@
+<%- include("header") -%>
+
+
+
+<div class="box" id ="heading" >
+  <h1><%= defaultTitle %></h1>
+  </div>
+  <div class="box" id="titles">
+
+    <% newListTitles.forEach(function(title){ %>
+      <span>
+        <form class="titleCheckBox" action="/deleteTitle" method="post">
+        <input type="checkbox" name="checkbox" value="<%= title._id %>" onchange="this.form.submit()">
+        <input type="hidden" name="titleName" value="<%= defaultTitle %>"></input>
+        </form>
+      </span>
+      <span>
+        <form class="title" action="/<%=title.name %>" method="post">
+        <button  class="titlenav" type="submit" name="titlebutton" value="<%=title.name %>"><p><%= title.name %> </p> </button>
+        </form>
+      </span>
+
+    <% }) %>
+  </div>
+
+<div class="box">
+  <form class="item" action="/" method="post">
+    <input type="text" name="title" value="" placeholder="New Task Heading" required="required">
+    <button type="submit" name="defaultTitle" value="<%= defaultTitle %>">+</button>
+  </form>
+
+</div>
+
+
+
+
+
+<%- include("footer") -%>
