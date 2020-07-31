@@ -3,7 +3,6 @@ This is a To do list using Node.js and Mongodb as Database.
 
 ## Install
 
-#### [npm](https://www.npmjs.com/package/toastr)
 Step 1
 ```
 open command prompt and run npm install
