@@ -31,11 +31,11 @@ const title1 = {
   name: "Welcome to your to do List"
 };
 const title2 ={
-  name: "Click + create new list"
+  name: "Click + create new List"
 };
 
 const title3 = {
-  name: "<-- Click here to delete this list"
+  name: "<-- Click here to delete this List"
 };
 
 const defaultTitles = [title1, title2, title3];
@@ -57,11 +57,11 @@ const Item = mongoose.model("item", itemsSchema);
 
 
 const item2 = new Item({
-  name: "Hit the + button to add a new item."
+  name: "Hit the + button to add a new Task."
 });
 
 const item3 = new Item({
-  name: "<-- Hit this to delete an item."
+  name: "<-- Hit this to delete an Task."
 });
 
 const defaultItems = [item2, item3];
