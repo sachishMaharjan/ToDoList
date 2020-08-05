@@ -164,7 +164,6 @@ app.post("/deleteTitle", function(req, res) {
 app.post("/", function(req, res) {
   const newTitle = req.body.title;
   const defaultTitle = req.body.defaultTitle;
-  //console.log(newTitle);
   const day = date.getDate();
 
   const title = new Title({
@@ -194,7 +193,6 @@ app.post("/", function(req, res) {
 app.post("/:customTitleName", function(req, res) {
   const customTitleName = req.body.list || req.body.titlebutton;
   const newItem = req.body.newItem;
-  console.log(newItem);
 
 if(customTitleName == req.body.list){
   const item = new Item({
